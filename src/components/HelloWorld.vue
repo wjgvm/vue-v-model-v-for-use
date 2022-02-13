@@ -93,7 +93,7 @@ export default {
     const people = [{ name: 'Latin@' }, { name: 'Caribeñ@' }, { name: 'American@' }, { name: 'Aborigen' }, { name: 'Ameztiz@' }, { name: 'Pard@' }, { name: 'Penizular' }];
     const selectedPerson = ref(people[0]);
 
-    const fruits = {
+    const fruits = ref({
       Apple: {
         name: 'Manzanas',
         value: false
@@ -126,7 +126,7 @@ export default {
         name: 'Piña',
         value: false
       }
-    };
+    });
     function actualizar(que) {
       console.log(que);
     }
